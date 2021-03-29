@@ -1,0 +1,28 @@
+[bar/bar]
+modules-left = bspwm
+modules-right = date
+tray-position = right
+wm-restack = bspwm
+height = 20
+font-0 = fixed:size=10;2
+
+[module/bspwm]
+type = internal/bspwm
+label-focused = %name%
+label-focused-padding = 1
+label-focused-foreground = #ffffff
+label-focused-background = #3f3f3f
+label-focused-underline = #fba922
+label-occupied = %name%
+label-occupied-padding = 1
+label-empty = %name%
+label-empty-foreground = #55
+label-empty-padding = 1
+
+[module/date]
+type = internal/date
+date = %Y-%m-%d
+time = %I:%M %p
+label = %date% %time%
+
+; vim:ft=dosini
